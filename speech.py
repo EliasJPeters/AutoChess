@@ -9,10 +9,6 @@ with sr.Microphone(device_index=1) as source:
     audio = r.listen(source)
 
 
-
-
-
-
 WIT_AI_KEY = "3SJGCEANYYUJQSVMTMCNGVC4XX22LMMW"  # Wit.ai keys are 32-character uppercase alphanumeric strings
 try:
     print("Did you say: " + r.recognize_wit(audio, key=WIT_AI_KEY))
