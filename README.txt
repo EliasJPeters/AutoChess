@@ -1,0 +1,1 @@
+This is an attempt to make an self-moving chess bot that can be told what moves to play with speech recognition
