@@ -15,7 +15,9 @@ def listenAudio():
     try:
         print("Did you say: " + r.recognize_wit(audio, key=WIT_AI_KEY))
         translatedAudio = r.recognize_wit(audio, key = WIT_AI_KEY)
+        return translatedAudio;
     except sr.UnknownValueError:
         print("Could not understand audio")
     except sr.RequestError as e:
         print("Could not request results from Wit.ai service; {0}".format(e))
+
